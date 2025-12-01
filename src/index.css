@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Georgia", serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+a {
+  color: #009688;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar a {
+  margin-left: 1rem;
+  color: #009688;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+.navbar a:first-child {
+  margin-left: 0;
+  font-weight: bold;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #009688;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 1.75rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+.book-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.book-card img {
+  width: 80px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.book-card h3 {
+  color: #009688;
+  font-family: "Georgia", serif;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.book-card p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  max-width: 600px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+
+.search-bar button {
+  margin-left: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #00796b;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-details img {
+  width: 200px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.book-details h2 {
+  color: #009688;
+  font-family: "Georgia", serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+li img {
+  width: 60px;
+  border: 1px solid #ddd;
+}
+
+li span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+
+button {
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+@media (max-width: 600px) {
+  .book-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-card img {
+    width: 120px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
